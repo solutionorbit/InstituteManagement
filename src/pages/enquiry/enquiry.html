@@ -1,0 +1,55 @@
+<!--
+  Generated template for the EnquiryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Enquiries</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item (click)="viewEnquiryDetails(item)">
+        <ion-avatar item-start>
+          <img src="img/slimer.png">
+        </ion-avatar>
+        <h2>{{item.firstname}} {{item.middlename}}  {{item.lastname}}</h2>
+        <p>{{item.enquirydate}}</p>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary" (click)="callSelectedEnquiry(item.phone)">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+        <button ion-button color="light">
+          <ion-icon name="call"></ion-icon>
+          Email
+        </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          <ion-icon name="mail"></ion-icon>
+          Delete
+        </button>
+        <button ion-button color="primary">
+          <ion-icon name="contact"></ion-icon>
+          Admit
+        </button>
+      </ion-item-options>
+    </ion-item-sliding> 
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)="openAddEnquiryPage()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
+

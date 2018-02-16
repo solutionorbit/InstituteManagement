@@ -1,0 +1,130 @@
+<!--
+  Generated template for the ViewenquirydetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Enquiry Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-item>
+    <ion-thumbnail >
+      <img src="img/marty-avatar.png">
+    </ion-thumbnail>
+  </ion-item>
+
+
+  <ion-list>
+    <ion-list-header color="light">
+      Enquiry About
+    </ion-list-header>
+      <ion-item>
+        Course
+        <ion-note item-end>
+          {{enquiry.course}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Center
+        <ion-note item-end>
+          {{enquiry.centerOfChoice}}
+        </ion-note>
+      </ion-item>
+      <ion-list-header color="light">
+        Who is Enquiring
+      </ion-list-header>
+      <ion-item>
+        First Name
+        <ion-note item-end>
+          {{enquiry.firstname}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Middle Name
+        <ion-note item-end>
+          {{enquiry.middlename}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Last Name
+        <ion-note item-end>
+          {{enquiry.lastname}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Gender
+        <ion-note item-end>
+          {{enquiry.gender}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Phone
+        <ion-note item-end>
+          {{enquiry.phone}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Email
+        <ion-note item-end>
+          {{enquiry.email}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Address Line 1
+        <ion-note item-end>
+          {{enquiry.address1}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Address Line 2
+        <ion-note item-end>
+          {{enquiry.address2}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        City
+        <ion-note item-end>
+          {{enquiry.city}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        State
+        <ion-note item-end>
+          {{enquiry.state}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        ZIP
+        <ion-note item-end>
+          {{enquiry.zip}}
+        </ion-note>
+      </ion-item>
+      <ion-list-header color="light">
+        Heard Us By
+      </ion-list-header>
+      <ion-item>
+        Heard Us By
+        <ion-note item-end>
+          {{enquiry.heardUsBy}}
+        </ion-note>
+      </ion-item>
+      <ion-item>
+        Message
+        <ion-note item-end>
+          {{enquiry.message}}
+        </ion-note>
+      </ion-item>
+    </ion-list>
+  <button ion-button color="secondary" type="submit" block (click)="editEnquiryDetails()">Edit Enquiry</button>
+
+
+    </ion-content>

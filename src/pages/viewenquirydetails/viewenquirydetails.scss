@@ -1,0 +1,18 @@
+page-viewenquirydetails {
+
+  ion-list {
+    border: 1px solid color($colors, light, base);
+  }
+
+  ion-item {
+    padding: 0px !important;
+  }
+
+  ion-label {
+    padding-left: 8px !important;
+  }
+
+  ion-thumbnail img {
+    margin: auto;
+  }
+}

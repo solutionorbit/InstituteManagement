@@ -1,0 +1,57 @@
+page-home {
+  .tile-container {
+    display: block;
+  }
+
+  ion-icon {
+    font-size: 3.8em;
+  }
+
+  .tile {
+    padding: 10px;
+    margin-bottom: 0.5em;
+    color: #fff;
+  }
+
+  .primary-tile {
+    background: color($colors, primary, base);
+  }
+
+
+  .secondary-tile {
+    background: color($colors, secondary, base);
+  }
+
+  .danger-tile {
+    background: color($colors, danger, base);
+  }
+
+
+  .tile:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .icon {
+    float: left;
+  }
+
+  .details {
+    float: right;
+  }
+
+  .data {
+    font-size: 30px;
+  }
+
+  .tile-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .data, .tile-title {
+    text-align: right;
+  }
+}
