@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
+import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -23,10 +24,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CallNumber } from '@ionic-native/call-number';
 
 import { Camera } from '@ionic-native/camera';
+import { TouchID } from '@ionic-native/touch-id';
 
 @NgModule({
   declarations: [
     MyApp,
+    LoginPage,
     HomePage,
     AdmissionPage,
     BatchPage,
@@ -46,6 +49,7 @@ import { Camera } from '@ionic-native/camera';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoginPage,
     HomePage,
     AdmissionPage,
     BatchPage,
@@ -63,6 +67,7 @@ import { Camera } from '@ionic-native/camera';
     SplashScreen,
     CallNumber,
     Camera,
+    TouchID,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

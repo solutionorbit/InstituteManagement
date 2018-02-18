@@ -1,0 +1,42 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #UserLogin="ngForm" (submit)="logIn(UserLogin)">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="userDetails.userName" name="UserName" value=""></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="userDetails.password" name="Password" value=""></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <button ion-button color="primary" block type="submit">Sign In</button>
+    </div>
+    <div class="fingerprint-container">
+      <button (click)="startTouchID()" round text-center>
+        <ion-icon name="finger-print"></ion-icon>
+      </button>
+    </div>
+  </form>
+
+</ion-content>
