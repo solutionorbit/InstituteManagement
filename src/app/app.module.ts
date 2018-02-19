@@ -20,6 +20,9 @@ import { AddadmissionPage } from '../pages/addadmission/addadmission';
 import { ViewadmissiondetailsPage } from '../pages/viewadmissiondetails/viewadmissiondetails';
 import { MasterdataPage } from '../pages/masterdata/masterdata';
 import { CreatetestPage } from '../pages/createtest/createtest';
+import { MastersubjectlistPage } from '../pages/mastersubjectlist/mastersubjectlist';
+import { MastermodulelistPage } from '../pages/mastermodulelist/mastermodulelist';
+import { MasterquestionarylistPage } from '../pages/masterquestionarylist/masterquestionarylist';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -47,7 +50,10 @@ import { TouchID } from '@ionic-native/touch-id';
     AddadmissionPage,
     ViewadmissiondetailsPage,
     MasterdataPage,
-    CreatetestPage
+    CreatetestPage,
+    MastersubjectlistPage,
+    MastermodulelistPage,
+    MasterquestionarylistPage
   ],
   imports: [
     BrowserModule,
@@ -71,7 +77,10 @@ import { TouchID } from '@ionic-native/touch-id';
     AddadmissionPage,
     ViewadmissiondetailsPage,
     MasterdataPage,
-    CreatetestPage
+    CreatetestPage,
+    MastersubjectlistPage,
+    MastermodulelistPage,
+    MasterquestionarylistPage
   ],
   providers: [
     StatusBar,

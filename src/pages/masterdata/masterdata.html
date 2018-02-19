@@ -16,25 +16,25 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <ion-grid>
     <ion-row>
       <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
-        <ion-item>
+        <ion-item (click)="viewSubjectList()">
           <ion-icon ios="logo-buffer" md="logo-buffer" item-left large></ion-icon>
           <h2>Subjects</h2>
           <ion-badge item-end>{{totalSubjects}}</ion-badge>
         </ion-item>
       </ion-col>
       <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
-        <ion-item>
+        <ion-item (click)="viewModuleList()">
           <ion-icon ios="ios-albums" md="md-albums" item-left large></ion-icon>
           <h2>Modules</h2>
           <ion-badge item-end>{{totalModules}}</ion-badge>
         </ion-item>
       </ion-col>
       <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
-        <ion-item>
+        <ion-item (click)="viewQuestionaryList()">
           <ion-icon ios="ios-alert" md="md-alert" item-left large></ion-icon>
           <h2>Questionaries</h2>
           <ion-badge item-end>{{totalQuestions}}</ion-badge>

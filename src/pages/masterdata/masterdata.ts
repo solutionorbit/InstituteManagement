@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { MastersubjectlistPage } from '../mastersubjectlist/mastersubjectlist';
+import { MastermodulelistPage } from '../mastermodulelist/mastermodulelist';
+import { MasterquestionarylistPage } from '../masterquestionarylist/masterquestionarylist';
+
 /**
  * Generated class for the MasterdataPage page.
  *
@@ -28,6 +32,19 @@ export class MasterdataPage {
     this.totalModules = 26;
     this.totalQuestions = 103;
   }
+
+  viewSubjectList() {
+    this.navCtrl.push(MastersubjectlistPage);
+  }
+
+  viewModuleList() {
+    this.navCtrl.push(MastermodulelistPage);
+  }
+
+  viewQuestionaryList() {
+    this.navCtrl.push(MasterquestionarylistPage);
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MasterdataPage');

@@ -1,5 +1,5 @@
 <!--
-  Generated template for the SubjectlistPage page.
+  Generated template for the MastersubjectlistPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,10 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Choose Subject</ion-title>
+    <ion-title>Subject List</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -19,13 +16,13 @@
 <ion-content>
   <ion-list>
     <ion-list-header>
-      Subject List
+      Subjects
       <ion-badge color="secondary" item-end>5</ion-badge>
     </ion-list-header>
     <ion-list>
       <button ion-item *ngFor="let sub of subjectList" (click)="selectSubject(sub)">
         <ion-icon ios="logo-buffer" md="logo-buffer"></ion-icon>
-        {{sub.subjectName}}<ion-badge item-end>{{sub.totalTest}}</ion-badge>
+        {{sub.subjectName}}<ion-badge item-end>{{sub.totalModules}} Modules</ion-badge>
       </button>
     </ion-list>
   </ion-list>

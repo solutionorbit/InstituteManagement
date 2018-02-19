@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { SubjetList } from '../../interfaces/SubjectList';
+import { SubjectList } from '../../interfaces/SubjectList';
 import { TestlistPage } from '../testlist/testlist';
 
 /**
@@ -18,7 +18,7 @@ import { TestlistPage } from '../testlist/testlist';
 })
 export class SubjectlistPage {
 
-  subjetList: Array<SubjetList>
+  subjectList: Array<SubjectList>
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.getSubjectList();
   }
@@ -28,7 +28,7 @@ export class SubjectlistPage {
   }
 
   getSubjectList() {
-    this.subjetList = [
+    this.subjectList = [
       { subjectID: '101', totalTest: 50, subjectName: 'Mathematics' },
       { subjectID: '102', totalTest: 23, subjectName: 'Social Science' },
       { subjectID: '103', totalTest: 12, subjectName: 'General Knowledge' },
@@ -36,7 +36,7 @@ export class SubjectlistPage {
       { subjectID: '105', totalTest: 5, subjectName: 'Chemestry' }];
   }
 
-  selectSubject(subject: SubjetList) {
+  selectSubject(subject: SubjectList) {
 
     this.navCtrl.push(TestlistPage, { selectedSubject: subject });
   }
