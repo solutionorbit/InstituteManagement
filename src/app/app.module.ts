@@ -18,6 +18,8 @@ import { QuestionPage } from '../pages/question/question';
 import { QuestionindexPage } from '../pages/questionindex/questionindex';
 import { AddadmissionPage } from '../pages/addadmission/addadmission';
 import { ViewadmissiondetailsPage } from '../pages/viewadmissiondetails/viewadmissiondetails';
+import { MasterdataPage } from '../pages/masterdata/masterdata';
+import { CreatetestPage } from '../pages/createtest/createtest';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -43,7 +45,9 @@ import { TouchID } from '@ionic-native/touch-id';
     QuestionPage,
     QuestionindexPage,
     AddadmissionPage,
-    ViewadmissiondetailsPage
+    ViewadmissiondetailsPage,
+    MasterdataPage,
+    CreatetestPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,9 @@ import { TouchID } from '@ionic-native/touch-id';
     QuestionPage,
     QuestionindexPage,
     AddadmissionPage,
-    ViewadmissiondetailsPage
+    ViewadmissiondetailsPage,
+    MasterdataPage,
+    CreatetestPage
   ],
   providers: [
     StatusBar,
