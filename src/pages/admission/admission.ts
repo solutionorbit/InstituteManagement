@@ -69,7 +69,7 @@ export class AdmissionPage {
   }
 
   openAddAdmissionPage() {
-    let modal = this.modalCtrl.create(AddadmissionPage, { isNewEnquiry: true });
+    let modal = this.modalCtrl.create(AddadmissionPage, { isNewAdmission: true });
     modal.present();
   }
 
@@ -77,6 +77,11 @@ export class AdmissionPage {
     this.navCtrl.push(ViewadmissiondetailsPage, { item: item });
   }
 
+  callSelectedStudent(contactNumber) {
+    this.callNumber.callNumber(contactNumber, true)
+      .then(() => console.log('Launched dialer!'))
+      .catch(() => console.log('Error launching dialer'));
+  }
 
 
   ionViewDidLoad() {

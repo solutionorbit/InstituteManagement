@@ -24,6 +24,20 @@
         <h2>{{item.firstname}} {{item.middlename}}  {{item.lastname}}</h2>
         <p>{{item.admissiondate}}</p>
       </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary" (click)="callSelectedStudent(item.phone)">
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+        <button ion-button color="light">
+          <ion-icon name="call"></ion-icon>
+          Email
+        </button>
+      </ion-item-options>
       <ion-item-options side="right">
         <button ion-button color="danger">
           <ion-icon name="mail"></ion-icon>
@@ -34,6 +48,6 @@
   </ion-list>
 
   <ion-fab right bottom>
-    <button ion-fab color="primary" (click)="openAddAdmissionPage()"><ion-icon name="add"></ion-icon></button>
+    <button ion-fab color="secondary" (click)="openAddAdmissionPage()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>
 </ion-content>

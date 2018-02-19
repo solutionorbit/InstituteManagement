@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { IonicPage, NavController, ModalController } from 'ionic-angular';
+import { AddadmissionPage } from '../addadmission/addadmission';
 
 import { EnquiryDetails } from '../../interfaces/EnquiryDetails';
 import { AddenquiryPage } from '../addenquiry/addenquiry';
@@ -77,8 +78,10 @@ export class EnquiryPage {
     this.navCtrl.push(ViewenquirydetailsPage, { item: item });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EnquiryPage');
+
+  admitStudent(item) {
+    let modal = this.modalCtrl.create(AddadmissionPage, { item: item, isNewAdmission: true });
+    modal.present();
   }
 
   callSelectedEnquiry(contactNumber) {
@@ -86,5 +89,11 @@ export class EnquiryPage {
       .then(() => console.log('Launched dialer!'))
       .catch(() => console.log('Error launching dialer'));
   }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad EnquiryPage');
+  }
+
+ 
 
 }

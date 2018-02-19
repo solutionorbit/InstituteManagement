@@ -16,7 +16,8 @@ import { SubjectlistPage } from '../pages/subjectlist/subjectlist';
 import { TestlistPage } from '../pages/testlist/testlist';
 import { QuestionPage } from '../pages/question/question';
 import { QuestionindexPage } from '../pages/questionindex/questionindex';
-
+import { AddadmissionPage } from '../pages/addadmission/addadmission';
+import { ViewadmissiondetailsPage } from '../pages/viewadmissiondetails/viewadmissiondetails';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -40,7 +41,9 @@ import { TouchID } from '@ionic-native/touch-id';
     SubjectlistPage,
     TestlistPage,
     QuestionPage,
-    QuestionindexPage
+    QuestionindexPage,
+    AddadmissionPage,
+    ViewadmissiondetailsPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,9 @@ import { TouchID } from '@ionic-native/touch-id';
     SubjectlistPage,
     TestlistPage,
     QuestionPage,
-    QuestionindexPage
+    QuestionindexPage,
+    AddadmissionPage,
+    ViewadmissiondetailsPage
   ],
   providers: [
     StatusBar,

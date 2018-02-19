@@ -46,16 +46,10 @@ export class AddenquiryPage {
     }
   }
 
-  goToEnquiryList() {
-    this.navCtrl.pop()
-  }
-
   dismiss() {
     this.viewCtrl.dismiss();
   }
-
-
- 
+  
   clickPicture() {
     this.camera.getPicture(this.options).then((imageData) => {
       // imageData is either a base64 encoded string or a file URI

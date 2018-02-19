@@ -1,3 +1,29 @@
 page-addadmission {
+  ion-list {
+    border: 1px solid color($colors, light, base);
+  }
 
+  ion-item {
+    padding: 0px !important;
+  }
+
+  ion-input {
+    padding-left: 8px !important;
+  }
+
+  ion-select {
+    padding: 14px 8px 13px 8px !important;
+  }
+
+  ion-thumbnail {
+    text-align: center;
+
+    img {
+      margin: auto;
+    }
+
+    ion-icon {
+      font-size: 4.1em;
+    }
+  }
 }

@@ -1,14 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\resources\\android",
-    "\\resources\\android\\splash",
     "\\src",
-    "\\src\\app",
-    "\\src\\pages",
-    "\\src\\pages\\addenquiry",
-    "\\src\\pages\\login"
+    "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\login\\login.html",
+  "SelectedNode": "\\src\\interfaces",
   "PreviewInSolutionExplorer": false
 }
