@@ -23,6 +23,8 @@ import { CreatetestPage } from '../pages/createtest/createtest';
 import { MastersubjectlistPage } from '../pages/mastersubjectlist/mastersubjectlist';
 import { MastermodulelistPage } from '../pages/mastermodulelist/mastermodulelist';
 import { MasterquestionarylistPage } from '../pages/masterquestionarylist/masterquestionarylist';
+import { CreatebatchPage } from '../pages/createbatch/createbatch';
+import { AddstudenttobatchPage } from '../pages/addstudenttobatch/addstudenttobatch';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -53,7 +55,9 @@ import { TouchID } from '@ionic-native/touch-id';
     CreatetestPage,
     MastersubjectlistPage,
     MastermodulelistPage,
-    MasterquestionarylistPage
+    MasterquestionarylistPage,
+    CreatebatchPage,
+    AddstudenttobatchPage
   ],
   imports: [
     BrowserModule,
@@ -80,7 +84,9 @@ import { TouchID } from '@ionic-native/touch-id';
     CreatetestPage,
     MastersubjectlistPage,
     MastermodulelistPage,
-    MasterquestionarylistPage
+    MasterquestionarylistPage,
+    CreatebatchPage,
+    AddstudenttobatchPage
   ],
   providers: [
     StatusBar,
