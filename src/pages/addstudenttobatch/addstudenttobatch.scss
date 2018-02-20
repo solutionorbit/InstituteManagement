@@ -1,4 +1,21 @@
 page-addstudenttobatch {
+
+  .vertical-scroll {
+    height:-webkit-fill-available;
+  }
+
+  .title-small {
+    font-size: 0.6em;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+  }
+
+  .title-main {
+    display: block;
+    text-align: center;
+  }
+
   ion-scroll[scrollX] {
     white-space: nowrap;
     height: 120px;
@@ -7,19 +24,33 @@ page-addstudenttobatch {
     .scroll-item {
       display: inline-block;
       margin: 0px 5px;
+      position: relative;
     }
 
     div img {
       margin: 10px;
-      margin:auto;
+      margin: auto;
+    }
+
+    ion-icon {
+      position: absolute;
+      right: 3px;
+      top: 0px;
+    }
+
+    ion-avatar {
+      margin-top: 8px;
     }
   }
 
   ion-scroll[scroll-avatar] {
-    height: 80px;
+    height: 65px;
 
     h6 {
       text-align: center;
+      width: 64px;
+      overflow: hidden;
+      text-overflow: ellipsis
     }
   }
   /* Hide ion-content scrollbar */

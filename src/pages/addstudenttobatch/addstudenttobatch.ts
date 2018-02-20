@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 
 import { BatchDetails } from '../../interfaces/BatchDetails';
@@ -18,10 +18,10 @@ import { AdmissionDetails } from '../../interfaces/AdmissionDetails';
 })
 export class AddstudenttobatchPage {
 
-  students: Array<AdmissionDetails>;
+  students: Array<AdmissionDetails> = new Array<AdmissionDetails>();
   selectedStudents: Array<AdmissionDetails> = new Array<AdmissionDetails>();
   batch: BatchDetails;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public viewCtrl: ViewController, public navParams: NavParams) {
     this.batch = navParams.data.batch;
   }
 
@@ -56,6 +56,13 @@ export class AddstudenttobatchPage {
     this.selectedStudents.unshift(student);
   }
 
+  removeSelectedStudent(student: AdmissionDetails) {
+    var index = this.selectedStudents.indexOf(student, 0);
+    if (index > -1) {
+      this.selectedStudents.splice(index, 1);
+    }
+  }
+
 
   getItems(ev: any) {
     // Reset items back to all of the items
@@ -72,7 +79,9 @@ export class AddstudenttobatchPage {
     }
   }
 
-
+  dismiss() {
+    this.viewCtrl.dismiss();
+  }
 
   ionViewDidLoad() {
     this.initializeItems();
