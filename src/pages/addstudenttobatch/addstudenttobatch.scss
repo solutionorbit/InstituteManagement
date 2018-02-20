@@ -6,21 +6,21 @@ page-addstudenttobatch {
 
     .scroll-item {
       display: inline-block;
+      margin: 0px 5px;
     }
 
-    .selectable-icon {
-      margin: 10px 20px 10px 20px;
-      color: red;
-      font-size: 100px;
-    }
-
-    ion-avatar img {
+    div img {
       margin: 10px;
+      margin:auto;
     }
   }
 
   ion-scroll[scroll-avatar] {
-    height: 60px;
+    height: 80px;
+
+    h6 {
+      text-align: center;
+    }
   }
   /* Hide ion-content scrollbar */
   ::-webkit-scrollbar {

@@ -5,23 +5,30 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>addstudenttobatch</ion-title>
+    <ion-title>{{batch.batchName}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content>
-  <ion-row>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
     <ion-item no-lines>
       <ion-scroll scrollX="true" scroll-avatar>
-        <ion-avatar>
-          <img src="{{avatar}}" *ngFor="let avatar of avatars" class="scroll-item" />
-          
-        </ion-avatar>
+        <div class="scroll-item" *ngFor="let student of selectedStudents">
+          <ion-avatar>
+            <img src="assets/imgs/person.jpg" />
+          </ion-avatar>
+          <h6>{{student.firstname}}</h6>
+        </div>
       </ion-scroll>
     </ion-item>
-  </ion-row>
+    <ion-item *ngFor="let stud of students" (click)="selectStudent(stud)">
+      <ion-avatar item-start>
+        <img src="assets/imgs/person.jpg">
+      </ion-avatar>
+      <h2>{{stud.firstname}} {{stud.middlename}}  {{stud.lastname}}</h2>
+      <p>{{stud.admissiondate | date: 'dd/MM/yyyy'}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

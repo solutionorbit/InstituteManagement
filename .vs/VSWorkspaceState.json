@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\pages"
+    "\\src\\assets\\imgs",
+    "\\src\\pages\\batch",
+    "\\src\\pages\\createbatch",
+    "\\src\\pages\\login"
   ],
-  "SelectedNode": "\\src\\interfaces",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

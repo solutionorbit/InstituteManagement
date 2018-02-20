@@ -24,7 +24,7 @@ export class CreatebatchPage {
   }
 
   addStudent() {
-    this.navCtrl.push(AddstudenttobatchPage);
+    this.navCtrl.push(AddstudenttobatchPage, { batch: this.batch });
   }
 
   ionViewDidLoad() {
