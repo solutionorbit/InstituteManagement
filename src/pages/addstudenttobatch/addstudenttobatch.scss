@@ -1,7 +1,11 @@
 page-addstudenttobatch {
 
   .vertical-scroll {
-    height:-webkit-fill-available;
+    position: absolute;
+    bottom: 0px;
+    top: 140px;
+    left: 0px;
+    right: 0px;
   }
 
   .title-small {
@@ -44,7 +48,7 @@ page-addstudenttobatch {
   }
 
   ion-scroll[scroll-avatar] {
-    height: 65px;
+    height: 70px;
 
     h6 {
       text-align: center;

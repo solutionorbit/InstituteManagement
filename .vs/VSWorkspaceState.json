@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src\\assets\\imgs",
-    "\\src\\pages\\batch",
-    "\\src\\pages\\createbatch",
-    "\\src\\pages\\login"
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\addstudenttobatch"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\pages\\addstudenttobatch\\addstudenttobatch.scss",
   "PreviewInSolutionExplorer": false
 }

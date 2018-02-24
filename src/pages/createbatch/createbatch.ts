@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 import { BatchDetails } from '../../interfaces/BatchDetails';
 import { AddstudenttobatchPage } from '../addstudenttobatch/addstudenttobatch';
@@ -19,12 +19,16 @@ import { AddstudenttobatchPage } from '../addstudenttobatch/addstudenttobatch';
 export class CreatebatchPage {
 
   batch: BatchDetails;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public viewCtrl: ViewController, public navParams: NavParams) {
     this.batch = { batchID: '', batchName: '', endDate: new Date(), startDate: new Date() };
   }
 
   addStudent() {
     this.navCtrl.push(AddstudenttobatchPage, { batch: this.batch });
+  }
+
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
   ionViewDidLoad() {

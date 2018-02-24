@@ -21,7 +21,7 @@ export class AddstudenttobatchPage {
   students: Array<AdmissionDetails> = new Array<AdmissionDetails>();
   selectedStudents: Array<AdmissionDetails> = new Array<AdmissionDetails>();
   batch: BatchDetails;
-  constructor(public navCtrl: NavController, public viewCtrl: ViewController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.batch = navParams.data.batch;
   }
 
@@ -79,9 +79,7 @@ export class AddstudenttobatchPage {
     }
   }
 
-  dismiss() {
-    this.viewCtrl.dismiss();
-  }
+  
 
   ionViewDidLoad() {
     this.initializeItems();
