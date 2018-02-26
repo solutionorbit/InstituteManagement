@@ -7,13 +7,28 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Batch</ion-title>
+    <ion-title>Batches</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
+  <ion-list>
+    <ion-list-header>
+      Batch List
+      <ion-badge color="secondary" item-end>7</ion-badge>
+    </ion-list-header>
+    <ion-list>
+      <button ion-item *ngFor="let batch of batchList" (click)="selectBatch(batch)">
+        <ion-icon ios="ios-people" md="md-people" item-start></ion-icon>
+        <h2>{{batch.batchName}}</h2>
+        <p>{{batch.startDate | date: 'dd/MM/yyyy'}} - {{batch.endDate | date: 'dd/MM/yyyy'}}</p>
+        <ion-badge item-end>{{batch.studentCount}}</ion-badge>
+      </button>
+    </ion-list>
+  </ion-list>
+
   <ion-fab right bottom>
     <button ion-fab color="secondary" (click)="createBatch()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>

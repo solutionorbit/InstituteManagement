@@ -5,5 +5,6 @@ export interface BatchDetails {
   batchName: string,
   startDate: Date,
   endDate: Date,
+  studentCount?:number,
   studentList?: Array<AdmissionDetails>
 }

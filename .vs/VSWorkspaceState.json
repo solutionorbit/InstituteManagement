@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\interfaces",
     "\\src\\pages",
-    "\\src\\pages\\addstudenttobatch"
+    "\\src\\pages\\enquiry",
+    "\\src\\pages\\subjectlist",
+    "\\src\\pages\\tabs"
   ],
-  "SelectedNode": "\\src\\pages\\addstudenttobatch\\addstudenttobatch.scss",
+  "SelectedNode": "\\src\\pages\\tabs\\tabs.html",
   "PreviewInSolutionExplorer": false
 }
