@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { IonicPage, NavController, ModalController } from 'ionic-angular';
 import { AddadmissionPage } from '../addadmission/addadmission';
 
