@@ -25,6 +25,7 @@ import { MastermodulelistPage } from '../pages/mastermodulelist/mastermodulelist
 import { MasterquestionarylistPage } from '../pages/masterquestionarylist/masterquestionarylist';
 import { CreatebatchPage } from '../pages/createbatch/createbatch';
 import { AddstudenttobatchPage } from '../pages/addstudenttobatch/addstudenttobatch';
+import { Pipefilter } from '../pages/pipefilter/pipefilter';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -57,7 +58,8 @@ import { TouchID } from '@ionic-native/touch-id';
     MastermodulelistPage,
     MasterquestionarylistPage,
     CreatebatchPage,
-    AddstudenttobatchPage
+    AddstudenttobatchPage,
+    Pipefilter
   ],
   imports: [
     BrowserModule,

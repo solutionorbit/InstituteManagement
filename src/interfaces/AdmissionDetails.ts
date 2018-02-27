@@ -20,6 +20,7 @@ export interface AdmissionDetails {
   heardUsBy: string,
   message: string,
 
-  admissiondate: Date
+  admissiondate: Date,
+  isSelected?: boolean
 }
 

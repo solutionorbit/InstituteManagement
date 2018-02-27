@@ -8,9 +8,9 @@
   <ion-navbar>
     <ion-title>
       <span class="title-main">{{batch.batchName}}</span>
-      <span class="title-small">{{selectedStudents.length}} / {{students.length}} Students</span>
+      <span class="title-small">{{(students | myfilter:true).length}} / {{students.length}} Students</span>
     </ion-title>
-    
+
     <ion-buttons end>
       <button ion-button type="submit">Create Batch</button>
     </ion-buttons>
@@ -20,9 +20,9 @@
 <ion-content>
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
-    <ion-item no-lines *ngIf="selectedStudents.length>0">
+    <ion-item no-lines *ngIf="(students | myfilter:true).length>0">
       <ion-scroll scrollX="true" scroll-avatar>
-        <div class="scroll-item" *ngFor="let student of selectedStudents">
+        <div class="scroll-item" *ngFor="let student of students | myfilter:true">
           <ion-avatar>
             <img src="assets/imgs/person.jpg" />
             <ion-icon color="primary" ios="ios-close-circle" md="md-close-circle" (click)="removeSelectedStudent(student)"></ion-icon>
@@ -31,15 +31,16 @@
         </div>
       </ion-scroll>
     </ion-item>
-    <ion-scroll scrollY="true" class="vertical-scroll">
+    <ion-scroll scrollY="true" class="vertical-scroll" [ngStyle]="{'top':(students | myfilter:true).length>0 ? '118px' : '44px' }">
       <ion-item *ngFor="let stud of students" (click)="selectStudent(stud)">
-
+        <ion-label>
+          <h2>{{stud.firstname}} {{stud.middlename}} {{stud.lastname}}</h2>
+          <p>{{stud.admissiondate | date: 'dd/MM/yyyy'}}</p>
+        </ion-label>
+        <ion-checkbox [(ngModel)]="stud.isSelected"></ion-checkbox>
         <ion-avatar item-start>
           <img src="assets/imgs/person.jpg">
         </ion-avatar>
-        <h2>{{stud.firstname}} {{stud.middlename}}  {{stud.lastname}}</h2>
-        <p>{{stud.admissiondate | date: 'dd/MM/yyyy'}}</p>
-
       </ion-item>
     </ion-scroll>
 
